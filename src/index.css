@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div {
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 20px;
+  margin: 30px;
+  line-height: 50px;
+  overflow: auto;
+}
+.center_div h1 {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.center_div ol {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 30px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+.center_div button {
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 13px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-weight: 900;
+}
+.center_div button:hover {
+  background-color: green;
+}
+.center_div input {
+  width: 252px;
+  height: 41px;
+  text-align: center;
+  border-radius: 20px;
+  outline: none;
+  border-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px
+}
+
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 500px;
+}
+.todo_style button {
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 13px;
+  width: 41px;
+  height: 41px;
+  border: none;
+  font-weight: 500;
+  margin-right: 40px;
+  border: none;
+ 
+}
+.todo_style button:hover {
+  background-color: red;
+}
+.gopi {
+  text-decoration: line-through;
 }
