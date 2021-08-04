@@ -18,18 +18,24 @@ const App = () => {
 
 
     const addbutt = () => {
-        setitem((olditems) => {
+        
+        if(!list)
+        {
+            alert("Add value");
+        }
+        else{
+              setitem((olditems) => {
 
             return ([...olditems, list])
 
         })
         setlist('');
+        }
     }
 
     const deleteitems = (id) => {
 
-
-        setitem((olditems) => {
+            setitem((olditems) => {
 
             return olditems.filter((arrElem, index) => {
 
